@@ -1,0 +1,1 @@
+* container nginx,app都要綁定 volumes ```./app:/var/www/html```
