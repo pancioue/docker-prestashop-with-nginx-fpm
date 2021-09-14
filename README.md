@@ -14,7 +14,5 @@ fastcgi_send_timeout         1000;
 ```
 
 * __site.conf__ 設定參考網址：
-  https://stackoverflow.com/questions/44706951/nginx-to-serve-php-files-from-a-different-server
-  (注意有修改的地方)
-
-* 目前這樣的配置測試沒有問題，但安裝並沒有一次就成功，有時會失敗
+  https://github.com/PrestaShop/PrestaShop/pull/9047/files
+  (最後參考版，不需要或不確定需不需要的都沒加上去)
