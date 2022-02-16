@@ -14,5 +14,5 @@ fastcgi_send_timeout         1000;
 ```
 
 * __site.conf__ 設定參考網址：
-  https://github.com/PrestaShop/PrestaShop/pull/9047/files
-  (最後參考版，不需要或不確定需不需要的都沒加上去)
+1. https://github.com/PrestaShop/PrestaShop/pull/9047/files. 
+2. https://github.com/PrestaShop/PrestaShop/blob/bffb73a2f893f8e3caf613ba51d2f8f2d5c7c8e5/docs/server_config/nginx.conf.dist
