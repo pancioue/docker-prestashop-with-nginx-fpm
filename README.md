@@ -22,7 +22,8 @@ Friendly url
 -----------
 ```
 location / {
-    try_files $uri $uri/ /index.php?$args;
+    #try_files $uri $uri/ /index.php?$args; ## 訪問localhost時會出現403 forbidden
+    try_files $uri /index.php?$args;
     rewrite ^/api/?(.*)$ /webservice/dispatcher.php?url=$1 last;
 }
     
@@ -39,7 +40,7 @@ location /admin/ { #Change this to your admin folder
 # PHP FPM part
 location ~ [^/]\.php(/|$) {
     # Verify that the file exists, redirect to index if not
-    try_files $fastcgi_script_name /index.php$uri&$args;
+    # try_files $fastcgi_script_name /index.php$uri&$args; ## 官網有這行，但會導致訪問localhost/index.php時 500 internal error
 
     fastcgi_index  index.php;
 
