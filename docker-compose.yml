@@ -13,9 +13,8 @@ services:
             - net-prestashop
 
     app:
-        image: prestashop/prestashop:1.7-7.3-fpm
+        build: ./app
         volumes:
-            # - ./www.conf:/usr/local/etc/php-fpm.d/www.conf
             - ./app:/var/www/html
         networks:
             - net-prestashop
