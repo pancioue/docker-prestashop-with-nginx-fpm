@@ -6,12 +6,6 @@
   都是送到nginx本機，這也是為何上面提到的volume兩邊都必須綁定。
   此檔案實際不需要，但過程中扮演重要的角色，故保留。
 
-* __./nginx/nginx.conf__ 檔案最主要是為了修改timeout，否則會出現504 timeout
-```
-fastcgi_connect_timeout     75;
-fastcgi_read_timeout           1000;
-fastcgi_send_timeout         1000;
-```
 
 * __site.conf__ 設定參考網址：
 1. https://github.com/PrestaShop/PrestaShop/pull/9047/files. 
